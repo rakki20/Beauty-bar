@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Accessories</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="script.js" defer></script> <!-- Link the JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>BEAUTY BAR</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="product.html">Product</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="product">
+            <!-- Product 1 -->
+            <div class="product-image">
+                <img src="watch.jpeg" alt="Accessory Image">
+            </div>
+            <div class="product-details">
+                <h2>ELEGANT WATCH</h2>
+                <p class="description">This elegant and dainty gold-plated watch, perfect for any occasion.</p>
+                <p class="price">₹2250</p>
+                <button class="add-to-cart" onclick="addToCart({name: 'ELEGANT WATCH', price: 2250, description: 'This elegant and dainty gold-plated watch, perfect for any occasion.'})">Add to Cart</button>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-image">
+                <img src="hoops.jpeg" alt="Accessory Image">
+            </div>
+            <div class="product-details">
+                <h2>HOOPS</h2>
+                <p class="description">These hoops will add a beautiful essence to your style.</p>
+                <p class="price">₹580</p>
+                <button class="add-to-cart" onclick="addToCart({name: 'HOOPS', price: 580, description: 'These hoops will add a beautiful essence to your style.'})">Add to Cart</button>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-image">
+                <img src="combo.jpeg" alt="Accessory Image">
+            </div>
+            <div class="product-details">
+                <h2>EARRINGS COMBO</h2>
+                <p class="description">A combo of elegant gold-plated earrings.</p>
+                <p class="price">₹680</p>
+                <button class="add-to-cart" onclick="addToCart({name: 'EARRINGS COMBO', price: 680, description: 'A combo of elegant gold-plated earrings.'})">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Beauty Bar. All rights reserved.</p>
+    </footer>
+</body>
+</html>

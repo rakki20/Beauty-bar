@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Musical Instruments Store</title>
+    <link rel="stylesheet" href="cart.css"> <!-- Link to your external CSS file for cart page -->
+</head>
+<header>
+    <ul class="nav-links">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</header>
+<body>
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically generated here -->
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p><strong>Subtotal:</strong> ₹<span id="cart-subtotal">0.00</span></p>
+            <p><strong>Shipping:</strong> Free</p>
+            <p><strong>Total:</strong> ₹<span id="cart-total">0.00</span></p>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+
+        <!-- Payment Methods Section -->
+        <div class="payment-methods">
+            <h2>Choose Payment Method</h2>
+            <label><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label><br>
+            <label><input type="radio" name="payment" value="phonepe"> PhonePe</label><br>
+            <label><input type="radio" name="payment" value="card"> Credit/Debit Card</label>
+        </div>
+
+        <!-- Order Tracking Section -->
+        <div class="order-tracking">
+            <h2>Order Tracking</h2>
+            <input type="text" id="order-id" placeholder="Enter your order ID">
+            <button onclick="trackOrder()">Track Order</button>
+            <div id="order-status">
+                <!-- Order status will be displayed here -->
+            </div>
+        </div>
+
+        <div class="reviews-section">
+            <h2>Product Reviews</h2>
+            <div id="reviews-container">
+                <!-- Reviews will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript for cart functionality -->
+</body>
+</html>
